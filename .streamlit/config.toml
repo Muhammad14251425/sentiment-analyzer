@@ -1,0 +1,5 @@
+[server]
+# Streamlit's file watcher scans every imported module, which makes Transformers
+# try to import optional image modules and print "No module named 'torchvision'"
+# errors. This text-only app doesn't need it (refresh the page after editing code).
+fileWatcherType = "none"
